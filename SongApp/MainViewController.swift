@@ -36,15 +36,20 @@ class MainViewController: UIViewController, SongsTableViewControllerDelegate{
         // Dispose of any resources that can be recreated.
     }
     
+    //Metodo delegado que utilizamos para recibir la información desde el controlador SongsTableView
     func delegateMethod(tituloC: String, artistaC: String, albumC: String, caratula100C: UIImage, previewC: NSURL){
         self.tituloCancion.text = tituloC
         self.artistaCancion.text = artistaC
         self.albumCancion.text = albumC
         self.caratulaCancion.image = caratula100C
+        //descargamos el preview de la canción desde los servidores de iTunes
         let cancion:NSData? = NSData(contentsOfURL: previewC)
         if cancion != nil{
             do{
+                //cargamos la canción descargada y la reproducimos directamente
                 try reproductor = AVAudioPlayer(data: cancion!)
+                reproductor.volume = self.controlVolumen.value
+                reproductor.play()
             }catch{
                 print("Error al cargar el fichero de audio")
             }
@@ -61,36 +66,31 @@ class MainViewController: UIViewController, SongsTableViewControllerDelegate{
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         let cargaEmbebido = segue.destinationViewController as! SongsTableViewController
-        //IMPORTANTE: En la sioguiente línea creamos la referencia al delegado que utilizaremos desde el controlador child
+        //IMPORTANTE: En la siguiente línea creamos la referencia al delegado que utilizaremos desde el controlador child
         cargaEmbebido.delegate = self
         
     }
-    
 
     @IBAction func cambiarVolumen(sender: UISlider) {
         reproductor.volume = sender.value
     }
     
     @IBAction func accionPlayPause() {
-        if !reproductor.playing{
+        if (reproductor != nil) && !reproductor.playing{
             reproductor.volume = self.controlVolumen.value
             reproductor.play()
-            self.botonPlayPause.setTitle("Pause", forState: .Normal)
-        }else{
+        }else if (reproductor != nil){
             reproductor.pause()
-            self.botonPlayPause.setTitle("Play", forState: .Normal)
         }
         
     }
     
     @IBAction func accionStop() {
-        if reproductor.playing{
+        if (reproductor != nil) && reproductor.playing{
             reproductor.stop()
             reproductor.currentTime = 0.0
-            self.botonPlayPause.setTitle("Play", forState: .Normal)
         }
         
     }
-    
     
 }

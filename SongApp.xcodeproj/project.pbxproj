@@ -15,6 +15,7 @@
 		DA19D0C81CCA159200270319 /* SongsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19D0C71CCA159200270319 /* SongsTableViewCell.swift */; };
 		DA19D0CA1CCA190B00270319 /* Modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19D0C91CCA190B00270319 /* Modelo.swift */; };
 		DA19D0CC1CCA325C00270319 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19D0CB1CCA325C00270319 /* MainViewController.swift */; };
+		DAE53A441CD27D6700B278C3 /* download-on-itunes-button.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE53A431CD27D6700B278C3 /* download-on-itunes-button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DA19D0C71CCA159200270319 /* SongsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsTableViewCell.swift; sourceTree = "<group>"; };
 		DA19D0C91CCA190B00270319 /* Modelo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modelo.swift; sourceTree = "<group>"; };
 		DA19D0CB1CCA325C00270319 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DAE53A431CD27D6700B278C3 /* download-on-itunes-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download-on-itunes-button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		DA19D0AE1CCA05B800270319 /* SongApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAE53A421CD27D4A00B278C3 /* IMG */,
 				DA19D0C71CCA159200270319 /* SongsTableViewCell.swift */,
 				DA19D0AF1CCA05B800270319 /* AppDelegate.swift */,
 				DA19D0B31CCA05B800270319 /* Main.storyboard */,
@@ -71,6 +74,14 @@
 				DA19D0BB1CCA05B800270319 /* Info.plist */,
 			);
 			path = SongApp;
+			sourceTree = "<group>";
+		};
+		DAE53A421CD27D4A00B278C3 /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				DAE53A431CD27D6700B278C3 /* download-on-itunes-button.png */,
+			);
+			name = IMG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE53A441CD27D6700B278C3 /* download-on-itunes-button.png in Resources */,
 				DA19D0BA1CCA05B800270319 /* LaunchScreen.storyboard in Resources */,
 				DA19D0B71CCA05B800270319 /* Assets.xcassets in Resources */,
 				DA19D0B51CCA05B800270319 /* Main.storyboard in Resources */,
@@ -298,6 +310,7 @@
 				DA19D0C01CCA05B800270319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

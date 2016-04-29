@@ -65,6 +65,7 @@ class SongsTableViewController: UITableViewController {
         let album = datos.canciones[indexPath.row].album
         let caratula = datos.canciones[indexPath.row].caratula100
         let cancion = datos.canciones[indexPath.row].preview
+        //Llamada al método delegado para enviar a la vista principal los datos de la línea seleccionada
         self.delegate?.delegateMethod(titulo, artistaC: artista, albumC: album, caratula100C: caratula, previewC: cancion)
         
     }
