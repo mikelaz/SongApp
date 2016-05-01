@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0CA9371CD6147E00B32C0E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA0CA9361CD6147E00B32C0E /* LICENSE */; };
 		DA19D0B01CCA05B800270319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19D0AF1CCA05B800270319 /* AppDelegate.swift */; };
 		DA19D0B51CCA05B800270319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA19D0B31CCA05B800270319 /* Main.storyboard */; };
 		DA19D0B71CCA05B800270319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA19D0B61CCA05B800270319 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA0CA9361CD6147E00B32C0E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DA19D0AC1CCA05B800270319 /* SongApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA19D0AF1CCA05B800270319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA19D0B41CCA05B800270319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				DA19D0B61CCA05B800270319 /* Assets.xcassets */,
 				DA19D0B81CCA05B800270319 /* LaunchScreen.storyboard */,
 				DA19D0BB1CCA05B800270319 /* Info.plist */,
+				DA0CA9361CD6147E00B32C0E /* LICENSE */,
 			);
 			path = SongApp;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				DA19D0BA1CCA05B800270319 /* LaunchScreen.storyboard in Resources */,
 				DA19D0B71CCA05B800270319 /* Assets.xcassets in Resources */,
 				DA19D0B51CCA05B800270319 /* Main.storyboard in Resources */,
+				DA0CA9371CD6147E00B32C0E /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
